@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+    <div class="root">
+      <div class="body__cover"></div>
+        <div class="header">
+            <div  id="searchModal" class="header__drop">
+              <div class="header__search-box-top">
+                <i id="header__search-box-close"class="fa-solid fa-xmark header__search-box-close"></i>
+                <input type="text" placeholder="Bạn cần tìm gì hôm nay?" class="header__search-box-input">
+                <i class="header__basket-search fas fa-search"></i>
+              </div>
+                <div class="top__header">
+                    <div class="header__hotline">HOTLINE ĐẶT HÀNG: <span style="cursor: pointer;font-weight: bold;">058660 8660</span> </div>
+                    <img src="./assets/IMG/logo.png" alt="" class="header__img-logo">
+                    <div class="header__basket-group">
+                        <a href="" style="text-decoration: none; line-height: 1;letter-spacing: 2px;" class="header__basket-title">GIỎ HÀNG
+                          <i class="header__basket-icon fas fa-shopping-cart"></i>
+                        <div class="header__basket-search-box">Không có sản phẩm nào trong giỏ hàng.</div>
+                        </a>
+                        <i id="basketIcon" class="header__basket-search fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <div class="header__nav-option">CLZ X HNB</div>
+                    <div class="header__nav-option active">TOP
+                      <i style="font-size: 1rem;margin-left: 6px;" class="fa-solid fa-angle-down"></i>
+                    <ul class="header__nav-option-drop">
+                      <li class="header__nav-option-item">Hoodie</li>
+                      <li class="header__nav-option-item">Sweatshirt</li>
+                      <li class="header__nav-option-item">Jacket</li>
+                      <li class="header__nav-option-item">T-shirt</li>
+                      <li class="header__nav-option-item">Shirt</li>
+                    </ul>
+                    </div>
+                    <div class="header__nav-option active">BOTTOM
+                      <i style="font-size: 1rem;margin-left: 6px;" class="fa-solid fa-angle-down"></i>
+                      <ul class="header__nav-option-drop">
+                        <li class="header__nav-option-item">Jean & Denim</li>
+                        <li class="header__nav-option-item">Paints</li>
+                      </ul>
+                    </div>
+                    <div class="header__nav-option active">ACCESSORY
+                      <i style="font-size: 1rem;margin-left: 6px;" class="fa-solid fa-angle-down"></i>
+                      <ul class="header__nav-option-drop">
+                        <li class="header__nav-option-item">Bag</li>
+                        <li class="header__nav-option-item">Backpack</li>
+                        <li class="header__nav-option-item">Others</li>
+                        <li class="header__nav-option-item">Hat</li>
+                      </ul>
+                    </div>
+                    <div class="header__nav-option">MAGAZINE</div>
+                    <div class="header__nav-option">THE WINTER SOLDIER</div>
+                </div>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./assets/IMG/slider_1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/IMG/slider_2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/IMG/slider_4.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <div class="button__button-prev">
+                    <i class="button__prev-icon fa-solid fa-angle-left"></i>
+                  </div>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <div class="button__button-next">
+                    <i class="button__prev-icon fa-solid fa-angle-right"></i>
+                  </div>
+                </a>
+              </div>
+        </div>
+        <div class="body__product">
+            <div class="product__new-arrival" >
+                <div class="body__title">NEW ARRIVAL</div>
+                <div class="body__title-list">
+                  <span>TOP</span>
+                  /<span> BOTTOM</span>
+                  /<span> ACCESSORY</span>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/p1.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/p1b.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">Out of Stock</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/p2.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/p2b.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/p3.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/p3b.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/p4.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/p4b.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/p5.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/p5b.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__button-prev">
+                      <div class="button__prev">
+                        <i class="button__prev-icon fa-solid fa-angle-left"></i>
+                      </div>
+                    </div>
+                    <div class="product__button-next">
+                      <div class="button__next">
+                        <i class="button__next-icon fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <button class="product__button-more">
+              XEM TẤT CẢ . NEW ARRIVAL
+              <div class="product__button-more-black"></div>
+            </button>
+        </div>
+        <div class="body__banner">
+          <div class="body__banner-option">
+            <img src="./assets/IMG/banner1.jpg" alt="banner1">
+            <div class="body__banner-option-info">
+              <div class="banner__title">TOP</div>
+              <button class="banner__button product__button-more">
+                XEM THÊM
+                <div class="product__button-more-black"></div>
+              </button>
+            </div>
+          </div>
+          <div class="body__banner-option">
+            <img src="./assets/IMG/banner2.jpg" alt="banner1">
+            <div class="body__banner-option-info">
+              <div class="banner__title">BOTTOM</div>
+              <button class="banner__button product__button-more">
+                XEM THÊM
+                <div class="product__button-more-black"></div>
+              </button>
+            </div>
+          </div>
+          <div class="body__banner-option">
+            <img src="./assets/IMG/banner3.jpg" alt="banner1">
+            <div class="body__banner-option-info">
+              <div class="banner__title">ACCESSORY</div>
+              <button class="banner__button product__button-more">
+                XEM THÊM
+                <div class="product__button-more-black"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Produc-top -->
+        <div class="body__product">
+          <div class="product__new-arrival" >
+              <div class="body__title">TOP</div>
+              <div class="body__title-list"> 
+                <span>Hoodie</span>
+                /<span> Sweatshirt</span>
+                /<span> Jacket</span>
+                /<span> T-Shirt</span>
+                <span>Shirt</span>
+              </div>
+              <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                          <img src="./assets/IMG/top1.jpg" alt="product1">
+                          <div class="product__info">
+                              <div class="product__info-title">JACKETS & VESTS</div>
+                              <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                              <div class="product__info-price">899.000 đ</div>
+                          </div>
+                          <img src="./assets/IMG/top1back.jpg" alt="product1-back" class="product-back">
+                          <button class="button__info">Chi tiết</button>
+                          <div class="product__label">Out of Stock</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                          <img src="./assets/IMG/top2.jpg" alt="product1">
+                          <div class="product__info">
+                              <div class="product__info-title">JACKETS & VESTS</div>
+                              <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                              <div class="product__info-price">899.000 đ</div>
+                          </div>
+                          <img src="./assets/IMG/top2back.jpg" alt="product1-back" class="product-back">
+                          <button class="button__info">Chi tiết</button>
+                          <div class="product__label">New Arrival</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                          <img src="./assets/IMG/top3.jpg" alt="product1">
+                          <div class="product__info">
+                              <div class="product__info-title">JACKETS & VESTS</div>
+                              <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                              <div class="product__info-price">899.000 đ</div>
+                          </div>
+                          <img src="./assets/IMG/top3back.jpg" alt="product1-back" class="product-back">
+                          <button class="button__info">Chi tiết</button>
+                          <div class="product__label">New Arrival</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                          <img src="./assets/IMG/top4.jpg" alt="product1">
+                          <div class="product__info">
+                              <div class="product__info-title">JACKETS & VESTS</div>
+                              <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                              <div class="product__info-price">899.000 đ</div>
+                          </div>
+                          <img src="./assets/IMG/top4back.jpg" alt="product1-back" class="product-back">
+                          <button class="button__info">Chi tiết</button>
+                          <div class="product__label">New Arrival</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__item">
+                          <img src="./assets/IMG/top5.jpg" alt="product1">
+                          <div class="product__info">
+                              <div class="product__info-title">JACKETS & VESTS</div>
+                              <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                              <div class="product__info-price">899.000 đ</div>
+                          </div>
+                          <img src="./assets/IMG/top5back.jpg" alt="product1-back" class="product-back">
+                          <button class="button__info">Chi tiết</button>
+                          <div class="product__label">New Arrival</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__button-prev">
+                    <div class="button__prev">
+                      <i class="button__prev-icon fa-solid fa-angle-left"></i>
+                    </div>
+                  </div>
+                  <div class="product__button-next">
+                    <div class="button__next">
+                      <i class="button__next-icon fa-solid fa-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <button class="product__button-more">
+            XEM TẤT CẢ . TOP
+            <div class="product__button-more-black"></div>
+          </button>
+      </div>
+      <div class="body__product">
+            <div class="product__new-arrival" >
+                <div class="body__title">BOTTOM</div>
+                <div class="body__title-list">
+                  <span>Jeans & Denim</span>
+                  /<span> Pants</span>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/bottom1.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/bottom1back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">Out of Stock</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/bottom2.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/bottom2back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/bottom3.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/bottom3back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/bottom4.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/bottom4back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/bottom5.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/bottom5back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__button-prev">
+                      <div class="button__prev">
+                        <i class="button__prev-icon fa-solid fa-angle-left"></i>
+                      </div>
+                    </div>
+                    <div class="product__button-next">
+                      <div class="button__next">
+                        <i class="button__next-icon fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <button class="product__button-more">
+              XEM TẤT CẢ . BOTTOM
+              <div class="product__button-more-black"></div>
+            </button>
+        </div>
+        <div class="body__product">
+            <div class="product__new-arrival" >
+                <div class="body__title">ACCESSORIES</div>
+                <div class="body__title-list"> 
+                  <span>Bag</span>
+                  /<span> Backpack</span>
+                  /<span> Others</span>
+                  /<span> Hat</span>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/acc1.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/acc1back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">Out of Stock</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/acc2.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/acc2back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/acc3.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/acc3back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/acc4.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/acc4back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__item">
+                            <img src="./assets/IMG/acc5.jpg" alt="product1">
+                            <div class="product__info">
+                                <div class="product__info-title">JACKETS & VESTS</div>
+                                <div class="product__info-name">BIG LOGO VARSITY JACKETS CLOWNZ</div>
+                                <div class="product__info-price">899.000 đ</div>
+                            </div>
+                            <img src="./assets/IMG/acc5back.jpg" alt="product1-back" class="product-back">
+                            <button class="button__info">Chi tiết</button>
+                            <div class="product__label">New Arrival</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__button-prev">
+                      <div class="button__prev">
+                        <i class="button__prev-icon fa-solid fa-angle-left"></i>
+                      </div>
+                    </div>
+                    <div class="product__button-next">
+                      <div class="button__next">
+                        <i class="button__next-icon fa-solid fa-angle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <button class="product__button-more">
+              XEM TẤT CẢ . ACCESSORIES
+              <div class="product__button-more-black"></div>
+            </button>
+        </div>
+        <div class="body__collection body__product">
+          <div class="body__collection-title body__title">CLOWNZ NEW COLLECTION</div>
+          <div class="body__collection-list">
+            <div class="body__collection-option">
+              <img src="./assets/IMG/collection1.jpg" alt="">
+              <div class="body__collection-option-title">𝐂𝐥𝐨𝐰𝐧𝐙 𝐱 𝐒𝐚𝐢𝐠𝐨𝐧 𝐒𝐰𝐚𝐠𝐠𝐞𝐫 𝐂𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧</div>
+              <div class="body__collection-option-info">Sau những ngày tháng ủ ê vì giãn cách, ClownZ Streetwear và Saigon Swagger đã quay trở lại đường đua c...</div>
+            </div>
+            <div class="body__collection-option">
+              <img src="./assets/IMG/collection2.jpg" alt="">
+              <div class="body__collection-option-title">CLOWNZ X RAP NHÀ LÀM | HOMEMADE RAPPER COLLECTION</div>
+              <div class="body__collection-option-info">Mang trong mình tình cảm đặc biệt với văn hóa đường phố, tinh thần support-local-artist cùng mong muốn góp...</div>
+            </div>
+            <div class="body__collection-option">
+              <img src="./assets/IMG/collection3.jpg" alt="">
+              <div class="body__collection-option-title">WOWY X CLOWNZ</div>
+              <div class="body__collection-option-info">Rapper Wowy Nguyễn trong collection mới nhất của ClownZ Streetwear. Đây cũng là vinh dự khi ClownZ trở thà...</div>
+            </div>
+          </div>
+          <button class="product__button-more">
+            XEM TẤT CẢ 
+            <div class="product__button-more-black"></div>
+          </button>
+        </div>
+        <div class="footer">
+          <div class="footer__col">
+            <div class="footer__title" style="cursor: pointer;" > <img src="./assets/IMG/logo.png" style="height: 32px;" alt="logo"></div>
+            <span style="letter-spacing: 2px;"><i class="fa-solid fa-location-dot"></i>
+              CÔNG TY TNHH 2 THÀNH VIÊN CLOWNZ
+            </span>
+            <span><i class="fa-solid fa-phone"></i>
+              058660 8660</span>
+            <span><i class="fa-solid fa-envelope"></i>
+              duong@clownz.vn</span>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">LIÊN HỆ</div>
+            <span><i style="color: rgb(23, 168, 252);" class="fa-solid fa-location-dot"></i>
+              CLOWNZ STORE</span>
+            <span><i style="color: rgb(23, 168, 252);" class="fa-solid fa-location-dot"></i>
+              45 Núi Trúc, Ba Đình, HN</span>
+            <span><i style="color: rgb(23, 168, 252);" class="fa-solid fa-location-dot"></i>
+              19 Hồ Đắc Di, Đống Đa, HN</span>
+            <span><i style="color: rgb(23, 168, 252);" class="fa-solid fa-location-dot"></i>
+              The New Play Ground Vincom Bà Triệu</span>
+            <span><i style="color: rgb(23, 168, 252);" class="fa-solid fa-truck-fast"></i>
+              Ship COD toàn quốc</span>
+            <span><i style="color: rgb(23, 168, 252);" class="fa-solid fa-gift"></i>
+              FREESHIP đơn hàng từ 700.000đ</span>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">CHÍNH SÁCH</div>
+            <span>
+              CHÍNH SÁCH THÀNH VIÊN</span>
+            <span>CHÍNH SÁCH ĐỔI TRẢ</span>
+            <span>CHÍNH SÁCH VẬN CHUYỂN</span>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">CHÍNH SÁCH</div>
+            <span style="font-size: 0.8rem; font-weight:bold;">Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</span>
+            <input class="footer__email" placeholder="Email của bạn" type="text">
+            <button class="product__button-more">
+              ĐĂNG KÝ
+              <div class="product__button-more-black"></div>
+            </button>
+          </div>
+        </div>
+        <div class="footer__end">© Bản quyền thuộc về Clownz Store | Cung cấp bởi Sapo</div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./effect.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".product__button-next",
+          prevEl: ".product__button-",
+        },
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.0.0-beta3-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./assets/detail.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="body__cover"></div>
+      <div class="header">
+        <div id="searchModal" class="header__drop">
+          <div class="header__search-box-top">
+            <i
+              id="header__search-box-close"
+              class="fa-solid fa-xmark header__search-box-close"
+            ></i>
+            <input
+              type="text"
+              placeholder="Bạn cần tìm gì hôm nay?"
+              class="header__search-box-input"
+            />
+            <i class="header__basket-search fas fa-search"></i>
+          </div>
+          <div class="top__header">
+            <div class="header__hotline">
+              HOTLINE ĐẶT HÀNG:
+              <span style="cursor: pointer; font-weight: bold"
+                >058660 8660</span
+              >
+            </div>
+            <img src="./assets/IMG/logo.png" alt="" class="header__img-logo" />
+            <div class="header__basket-group">
+              <a
+                href=""
+                style="
+                  text-decoration: none;
+                  line-height: 1;
+                  letter-spacing: 2px;
+                "
+                class="header__basket-title"
+                >GIỎ HÀNG
+                <i class="header__basket-icon fas fa-shopping-cart"></i>
+                <div class="header__basket-search-box">
+                  Không có sản phẩm nào trong giỏ hàng.
+                </div>
+              </a>
+              <i
+                id="basketIcon"
+                class="header__basket-search fas fa-search"
+              ></i>
+            </div>
+          </div>
+          <div class="header__nav">
+            <div class="header__nav-option">CLZ X HNB</div>
+            <div class="header__nav-option active">
+              TOP
+              <i
+                style="font-size: 1rem; margin-left: 6px"
+                class="fa-solid fa-angle-down"
+              ></i>
+              <ul class="header__nav-option-drop">
+                <li class="header__nav-option-item">Hoodie</li>
+                <li class="header__nav-option-item">Sweatshirt</li>
+                <li class="header__nav-option-item">Jacket</li>
+                <li class="header__nav-option-item">T-shirt</li>
+                <li class="header__nav-option-item">Shirt</li>
+              </ul>
+            </div>
+            <div class="header__nav-option active">
+              BOTTOM
+              <i
+                style="font-size: 1rem; margin-left: 6px"
+                class="fa-solid fa-angle-down"
+              ></i>
+              <ul class="header__nav-option-drop">
+                <li class="header__nav-option-item">Jean & Denim</li>
+                <li class="header__nav-option-item">Paints</li>
+              </ul>
+            </div>
+            <div class="header__nav-option active">
+              ACCESSORY
+              <i
+                style="font-size: 1rem; margin-left: 6px"
+                class="fa-solid fa-angle-down"
+              ></i>
+              <ul class="header__nav-option-drop">
+                <li class="header__nav-option-item">Bag</li>
+                <li class="header__nav-option-item">Backpack</li>
+                <li class="header__nav-option-item">Others</li>
+                <li class="header__nav-option-item">Hat</li>
+              </ul>
+            </div>
+            <div class="header__nav-option">MAGAZINE</div>
+            <div class="header__nav-option">THE WINTER SOLDIER</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product__detail">
+        <div class="product__detail-way">
+          <a href="">Trang chủ</a> >
+          <div class="span">T-shirt Bạn Thì Kinh Rồi</div>
+        </div>
+        <div class="product__detail-main">
+          <div class="product__detail-img-main">
+            <img
+              class="product__detail-img-center"
+              src="./assets/IMG/detail-img-1.webp"
+              alt=""
+            />
+            <div class="product__detail-img-more">
+              <img src="./assets/IMG/detail-img-1.webp" alt="" />
+              <img src="./assets/IMG/cz-0253-2.webp" alt="" />
+              <img src="./assets/IMG/detail-img-3.webp" alt="" />
+              <img src="./assets/IMG/detail-img-4.webp" alt="" />
+              <img src="./assets/IMG/detail-img-5.webp" alt="" />
+            </div>
+          </div>
+          <div class="product__detail-info">
+            <h1>T-SHIRT BẠN THÌ KINH RỒI</h1>
+            <span class="product_-detail-info-price">329.000đ</span>
+            <span class="product__detail-info-state">Tình trạng: Còn hàng</span>
+            <div class="product__detail-info-color">
+              <div class="product__detail-info-kind">Màu sắc:</div>
+              <div class="product__detail-info-color-item">
+                <img src="./assets/IMG/detail-img-1.webp" alt="" />
+                Black
+              </div>
+              <div class="product__detail-info-color-item">
+                <img src="./assets/IMG/detail-img-1.webp" alt="" />
+                white
+              </div>
+              <div class="product__detail-info-color-item">
+                <img src="./assets/IMG/detail-img-1.webp" alt="" />
+                Bright Blue
+              </div>
+              <div class="product__detail-info-color-item">
+                <img src="./assets/IMG/detail-img-1.webp" alt="" />
+                Pink
+              </div>
+              <div class="product__detail-info-color-item">
+                <img src="./assets/IMG/detail-img-1.webp" alt="" />
+                Yellow
+              </div>
+            </div>
+            <div class="product__detail-info-size">
+              <div class="product__detail-info-kind">Size:</div>
+              <p>M</p>
+              <p>L</p>
+              <p>XL</p>
+            </div>
+            <div class="product__detail-info-quantity">
+              <div class="product__detail-info-kind">Số lượng:</div>
+              <div class="product__detail-info-quantity-plus">
+                <p>-</p>
+                <p>1</p>
+                <p>+</p>
+              </div>
+            </div>
+            <button class="product__detail-info-buy">MUA NGAY</button>
+            <img class="img-size" src="./assets/IMG/size.webp" alt="" />
+
+            <p style="font-size: 1rem; font-weight: 600">
+              Gọi đặt mua: 058660 8660 (miễn phí 8:30 - 18:00).
+            </p>
+            <div class="product__detail-info-service">
+              <img class="buy-icon" src="./assets/IMG/icon1.svg" alt="" />
+              <p>MIỄN PHÍ VẬN CHUYỂN VỚI ĐƠN HÀNG TỪ 500.000Đ</p>
+            </div>
+            <div class="product__detail-info-service">
+              <img class="buy-icon" src="./assets/IMG/icon2.svg" alt="" />
+              <p>BẢO HÀNH DO LỖI NHÀ SẢN XUẤT</p>
+            </div>
+            <div class="product__detail-info-service">
+              <img class="buy-icon" src="./assets/IMG/icon3.svg" alt="" />
+              <p>CAM KẾT 100% CHÍNH HÃNG</p>
+            </div>
+          </div>
+        </div>
+        <div class="product__detail-description">
+          <div>MÔ TẢ</div>
+          <div>CHÍNH SÁCH ĐỔI TRẢ</div>
+        </div>
+        <div class="product__detail-description-text">
+          Mô tả sản phẩm:
+          <ul>
+            <li>Chất liệu: cotton 2 chiều</li>
+            <li>Dáng suông, form rộng</li>
+            <li>
+              Tag cao su chính hãng ở mép áo phải và tag phụ ở tay và mép áo
+              trái
+            </li>
+            <li>Logo chú hề thương hiệu thêu ở chính giữa mặt trước</li>
+            <li>Chữ CLOWNZ in lưới ở mặt sau</li>
+            <li>Chất vải thoáng mát, thấm hút mồ hôi</li>
+            <li>Dễ dàng phối với mọi kiểu quần, phong cách trẻ trung, khỏe khoắn</li>
+          </ul>
+        </div>
+        <pre class="product__detail-description-text active">
+1. Tất cả các sản phẩm đã mua sẽ không được hoàn trả bằng tiền mặt.
+
+2. Yêu cầu sản phẩm:
+
+- Sản phẩm còn mới, nguyên tag, chưa sử dụng, sửa chữa hay giặt, là trong vòng 7 ngày kể từ ngày nhận hàng.
+
+- Sản phẩm được mua nguyên giá, không áp dụng hình thức khuyến mại, giảm giá. Các sản phẩm được mua trong 
+chương trình khuyến mãi giảm giá sẽ không được đổi trả. 
+
+3. Khách hàng được chấp nhận đổi sang bất kỳ món hàng nào có bán trong cửa hàng bằng hoặc hơn giá trị:
+
+- Cửa hàng không trả lại tiền thừa nếu khách muốn đổi sang sản phẩm có giá trị thấp hơn.
+
+- Hàng chỉ đổi một lần duy nhất.
+
+- Kiểm tra kỹ chất lượng sản phẩm đổi.
+
+4. Cách thức đổi hàng:
+
+- Trường hợp đến trực tiếp cửa hàng: khách hàng sản phẩm, mang theo hoá đơn và sản phẩm nguyên tag 
+tới cửa hàng để được hỗ trợ đổi hàng
+
+- Trường hợp đổi hàng qua hình thức chuyển hàng:
+
++ Khách hàng chụp đầy đủ hóa đơn, tình trạng hàng, mác hàng và gửi hình ảnh kèm thông tin cá nhân đến 
+fanpage ClownZ để được tư vấn đổi hàng.
+
++ Khi được sự đồng ý của nhân viên, khách bọc sản phẩm muốn đổi chuyển về địa chỉ như nhân viên chăm 
+sóc khách hàng hướng dẫn và lựa chọn sản phẩm muốn đổi.
+
++ Khách hàng thanh toán phần chênh lệch (nếu có) giữa sản phẩm mới và sản phẩm cũ.
+
++ Khi nhận được sản phẩm cần đổi và chuyển khoản chênh lệch (nếu có), nhân viên bọc hàng và gửi sản 
+phẩm khách chọn đổi.
+
+Lưu ý: 
+
++ Với trường hợp sản phẩm bị lỗi do nhà sản xuất (sản phẩm rách, bung chỉ, sờn vải), lỗi gửi nhầm 
+và thiếu hàng, bên phía ClownZ sẽ chịu phí ship đổi trả sản phẩm.
+
++ Với trường hợp khách hàng muốn đổi sản phẩm do lệch size hoặc muốn đổi sản phẩm khác, bên phía 
+khách hàng sẽ chịu phí đổi trả sản phẩm.
+        </pre>
+      </div>
+
+      <div class="body__product">
+        <div class="product__new-arrival">
+          <div class="body__title">SẢN PHẨM LIÊN QUAN</div>
+          <div class="body__title-list"></div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product__item">
+                  <img src="./assets/IMG/top1.jpg" alt="product1" />
+                  <div class="product__info">
+                    <div class="product__info-title">JACKETS & VESTS</div>
+                    <div class="product__info-name">
+                      BIG LOGO VARSITY JACKETS CLOWNZ
+                    </div>
+                    <div class="product__info-price">899.000 đ</div>
+                  </div>
+                  <img
+                    src="./assets/IMG/top1back.jpg"
+                    alt="product1-back"
+                    class="product-back"
+                  />
+                  <button class="button__info">Chi tiết</button>
+                  <div class="product__label">Out of Stock</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product__item">
+                  <img src="./assets/IMG/top2.jpg" alt="product1" />
+                  <div class="product__info">
+                    <div class="product__info-title">JACKETS & VESTS</div>
+                    <div class="product__info-name">
+                      BIG LOGO VARSITY JACKETS CLOWNZ
+                    </div>
+                    <div class="product__info-price">899.000 đ</div>
+                  </div>
+                  <img
+                    src="./assets/IMG/top2back.jpg"
+                    alt="product1-back"
+                    class="product-back"
+                  />
+                  <button class="button__info">Chi tiết</button>
+                  <div class="product__label">New Arrival</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product__item">
+                  <img src="./assets/IMG/top3.jpg" alt="product1" />
+                  <div class="product__info">
+                    <div class="product__info-title">JACKETS & VESTS</div>
+                    <div class="product__info-name">
+                      BIG LOGO VARSITY JACKETS CLOWNZ
+                    </div>
+                    <div class="product__info-price">899.000 đ</div>
+                  </div>
+                  <img
+                    src="./assets/IMG/top3back.jpg"
+                    alt="product1-back"
+                    class="product-back"
+                  />
+                  <button class="button__info">Chi tiết</button>
+                  <div class="product__label">New Arrival</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product__item">
+                  <img src="./assets/IMG/top4.jpg" alt="product1" />
+                  <div class="product__info">
+                    <div class="product__info-title">JACKETS & VESTS</div>
+                    <div class="product__info-name">
+                      BIG LOGO VARSITY JACKETS CLOWNZ
+                    </div>
+                    <div class="product__info-price">899.000 đ</div>
+                  </div>
+                  <img
+                    src="./assets/IMG/top4back.jpg"
+                    alt="product1-back"
+                    class="product-back"
+                  />
+                  <button class="button__info">Chi tiết</button>
+                  <div class="product__label">New Arrival</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product__item">
+                  <img src="./assets/IMG/top5.jpg" alt="product1" />
+                  <div class="product__info">
+                    <div class="product__info-title">JACKETS & VESTS</div>
+                    <div class="product__info-name">
+                      BIG LOGO VARSITY JACKETS CLOWNZ
+                    </div>
+                    <div class="product__info-price">899.000 đ</div>
+                  </div>
+                  <img
+                    src="./assets/IMG/top5back.jpg"
+                    alt="product1-back"
+                    class="product-back"
+                  />
+                  <button class="button__info">Chi tiết</button>
+                  <div class="product__label">New Arrival</div>
+                </div>
+              </div>
+            </div>
+            <div class="product__button-prev">
+              <div class="button__prev">
+                <i class="button__prev-icon fa-solid fa-angle-left"></i>
+              </div>
+            </div>
+            <div class="product__button-next">
+              <div class="button__next">
+                <i class="button__next-icon fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer__col">
+          <div class="footer__title" style="cursor: pointer">
+            <img src="./assets/IMG/logo.png" style="height: 32px" alt="logo" />
+          </div>
+          <span style="letter-spacing: 2px"
+            ><i class="fa-solid fa-location-dot"></i>
+            CÔNG TY TNHH 2 THÀNH VIÊN CLOWNZ
+          </span>
+          <span><i class="fa-solid fa-phone"></i> 058660 8660</span>
+          <span><i class="fa-solid fa-envelope"></i> duong@clownz.vn</span>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">LIÊN HỆ</div>
+          <span
+            ><i
+              style="color: rgb(23, 168, 252)"
+              class="fa-solid fa-location-dot"
+            ></i>
+            CLOWNZ STORE</span
+          >
+          <span
+            ><i
+              style="color: rgb(23, 168, 252)"
+              class="fa-solid fa-location-dot"
+            ></i>
+            45 Núi Trúc, Ba Đình, HN</span
+          >
+          <span
+            ><i
+              style="color: rgb(23, 168, 252)"
+              class="fa-solid fa-location-dot"
+            ></i>
+            19 Hồ Đắc Di, Đống Đa, HN</span
+          >
+          <span
+            ><i
+              style="color: rgb(23, 168, 252)"
+              class="fa-solid fa-location-dot"
+            ></i>
+            The New Play Ground Vincom Bà Triệu</span
+          >
+          <span
+            ><i
+              style="color: rgb(23, 168, 252)"
+              class="fa-solid fa-truck-fast"
+            ></i>
+            Ship COD toàn quốc</span
+          >
+          <span
+            ><i style="color: rgb(23, 168, 252)" class="fa-solid fa-gift"></i>
+            FREESHIP đơn hàng từ 700.000đ</span
+          >
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">CHÍNH SÁCH</div>
+          <span> CHÍNH SÁCH THÀNH VIÊN</span>
+          <span>CHÍNH SÁCH ĐỔI TRẢ</span>
+          <span>CHÍNH SÁCH VẬN CHUYỂN</span>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">CHÍNH SÁCH</div>
+          <span style="font-size: 0.8rem; font-weight: bold"
+            >Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn
+            nữa.</span
+          >
+          <input
+            class="footer__email"
+            placeholder="Email của bạn"
+            type="text"
+          />
+          <button class="product__button-more">
+            ĐĂNG KÝ
+            <div class="product__button-more-black"></div>
+          </button>
+        </div>
+      </div>
+      <div class="footer__end">
+        © Bản quyền thuộc về Clownz Store | Cung cấp bởi Sapo
+      </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="./effect.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".product__button-next",
+            prevEl: ".product__button-",
+          },
+        });
+      </script>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>

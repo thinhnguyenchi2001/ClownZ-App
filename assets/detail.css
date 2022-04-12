@@ -20,8 +20,13 @@
 }
 
 .product__detail-img-center {
+    display: none;
     width: 100%;
     margin-bottom: 16px;
+}
+
+.product__detail-img-center.active{
+    display: block;
 }
 
 .product__detail-img-more {
@@ -29,9 +34,12 @@
     justify-content: space-between;
 }
 
-.product__detail-img-more img {
+.product__detail-img-more-item {
     width: 18%;
     padding: 4px;
+}
+
+.product__detail-img-more-item.active {
     border: 1px solid black;
 }
 
@@ -69,9 +77,13 @@
 .product__detail-info-color-item {
     margin-left: 10px;
     padding: 2px 4px 2px 0;
-    border: 1px solid black;
     margin-bottom: 10px;
     font-size: 1rem;
+    cursor: pointer;
+}
+
+.product__detail-info-color-item.active {
+    border: 1px solid black;
 }
 
 .product__detail-info-color-item img {
@@ -87,13 +99,17 @@
     display: flex;
 }
 
-.product__detail-info-size p {
-    border: 1px solid black;
+.product__detail-info-kind-size {
     width: 30px;
     height: 30px;
     text-align: center;
     font-size: 1rem;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.product__detail-info-kind-size.active {
+    border: 1px solid black;
 }
 
 .product__detail-info-quantity {
@@ -101,17 +117,20 @@
     margin-bottom: 30px;
 }
 
-.product__detail-info-quantity-plus {
+.product__detail-info-quantity-add {
     display: flex;
     margin-left: 10px;
     border: 1px solid black;
 }
 
-.product__detail-info-quantity-plus p {
+.product__detail-info-quantity-plus,
+.product__detail-info-quantity-number,
+.product__detail-info-quantity-sub {
     width: 30px;
     height: 30px;
     margin: 0;
     text-align: center;
+    cursor: pointer;
 }
 
 .product__detail-info-buy {
@@ -123,7 +142,18 @@
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 30px;
+    cursor: pointer;
 }
+
+.product__detail-info-buy:focus {
+    outline: none;
+}
+
+.product__detail-info-buy:hover {
+    background-color: rgb(224, 46, 46);
+
+}
+
 .img-size {
     width: 100%;
     margin-bottom: 10px;
@@ -150,7 +180,6 @@
    display: flex;
    font-size: 1.2rem;
    font-weight: 500;
-   padding-bottom: 20px;
    border-bottom: 1px solid rgb(231, 231, 231);
 }
 
@@ -166,4 +195,9 @@
 .product__detail-description-text.active{
     display: block;
     font-size: 1rem;
+}
+
+.product__detail-description-title.active {
+    border-bottom: 1px solid rgb(214, 49, 49);
+    transition: all 1s;
 }

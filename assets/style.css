@@ -230,6 +230,7 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
+    color: black;
 }
 
 .product__label {
@@ -619,3 +620,4 @@ body {
     z-index: 3;
     opacity: 50%;
 }
+

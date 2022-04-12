@@ -37,6 +37,7 @@
 .product__detail-img-more-item {
     width: 18%;
     padding: 4px;
+    cursor: pointer;
 }
 
 .product__detail-img-more-item.active {
@@ -198,6 +199,9 @@
 }
 
 .product__detail-description-title.active {
-    border-bottom: 1px solid rgb(214, 49, 49);
-    transition: all 1s;
+    border-bottom: 2px solid rgb(214, 49, 49);
+}
+
+.product__detail-description-title {
+    cursor: pointer;
 }
